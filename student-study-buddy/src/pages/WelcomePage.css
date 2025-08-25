@@ -1,0 +1,131 @@
+.welcome-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.welcome-content {
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo-section {
+  margin-bottom: 50px;
+}
+
+.logo-graphic {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.logo-graphic .fa-graduation-cap {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.logo-graphic .hand-graphic {
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  font-size: 3rem;
+}
+
+.logo-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.logo-section h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 0;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.auth-btn {
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.login-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.login-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.signup-btn {
+  background: white;
+  color: #667eea;
+  border: 2px solid white;
+}
+
+.signup-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.welcome-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+
+.welcome-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .logo-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .logo-section h2 {
+    font-size: 1rem;
+  }
+  
+  .auth-btn {
+    padding: 12px 25px;
+  }
+  
+  .logo-graphic .fa-graduation-cap {
+    font-size: 3.5rem;
+  }
+  
+  .logo-graphic .hand-graphic {
+    font-size: 2.5rem;
+    right: -20px;
+  }
+}
