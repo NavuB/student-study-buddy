@@ -1,0 +1,269 @@
+.planner-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.planner-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.planner-header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.planner-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.planner-content {
+  display: grid;
+  gap: 30px;
+}
+
+.add-session-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.add-session-card h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.session-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-session-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  align-self: flex-start;
+}
+
+.add-session-btn:hover {
+  transform: translateY(-2px);
+}
+
+.add-session-btn i {
+  margin-right: 8px;
+}
+
+.sessions-list {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.sessions-list h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.empty-state i {
+  font-size: 3rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.empty-state p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.empty-state span {
+  font-size: 0.9rem;
+}
+
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.session-card {
+  background: #f8f9ff;
+  padding: 20px;
+  border-radius: 15px;
+  border-left: 4px solid #667eea;
+  position: relative;
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.session-header h3 {
+  color: #333;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.session-duration {
+  background: #667eea;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.session-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.session-time,
+.session-topic {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.session-time i,
+.session-topic i {
+  color: #667eea;
+  width: 16px;
+}
+
+.session-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.action-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.edit-btn:hover {
+  background: #bbdefb;
+}
+
+.delete-btn {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.delete-btn:hover {
+  background: #ffcdd2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .sessions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .planner-header h1 {
+    font-size: 2rem;
+  }
+  
+  .add-session-card,
+  .sessions-list {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .planner-container {
+    padding: 15px;
+  }
+  
+  .session-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .session-duration {
+    align-self: flex-start;
+  }
+}

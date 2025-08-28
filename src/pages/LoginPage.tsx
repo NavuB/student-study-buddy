@@ -59,20 +59,6 @@ const LoginPage: React.FC = () => {
 
           <button type="submit" className="auth-submit-btn">Login</button>
         </form>
-        // In src/pages/LoginPage.tsx, add this at the bottom of the form:
-<div style={{ marginTop: '20px', textAlign: 'center' }}>
-  <p style={{ color: '#666', marginBottom: '10px' }}>Development Mode:</p>
-  <Link to="/dashboard" className="btn" style={{ 
-    background: '#764ba2', 
-    display: 'inline-block',
-    padding: '10px 20px',
-    borderRadius: '5px',
-    color: 'white',
-    textDecoration: 'none'
-  }}>
-    Go to Dashboard (Temporary)
-  </Link>
-</div>
 
         <div className="auth-footer">
           <p>Not a member? <Link to="/signup">Sign up now</Link></p>
