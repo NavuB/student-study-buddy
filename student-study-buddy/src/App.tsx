@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DevHeader from './components/DevHeader';
 import WelcomePage from './pages/WelcomePage';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
@@ -10,6 +11,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* Add Dev Header for navigation */}
+        <DevHeader />
+        
         <Routes>
           <Route path="/" element={<WelcomePage />} />
           <Route path="/login" element={<LoginPage />} />
